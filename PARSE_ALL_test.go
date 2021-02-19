@@ -13,9 +13,9 @@ func TestParseAll(t *testing.T) {
 	if ! ok { t.Fatal(ok) }
 	dir := filepath.Dir(filePath) + "/"
 
-	paths, err := filepath.Glob(dir + "spec/*/*/*.bat")
+	paths, err := filepath.Glob(dir + "spec/*/*/*.txt")
 	if err != nil { t.Fatal(err) }
-	paths2, err := filepath.Glob(dir + "spec/*/*.bat")
+	paths2, err := filepath.Glob(dir + "spec/*/*.txt")
 	if err != nil { t.Fatal(err) }
 
 	paths = append(paths, paths2...)
