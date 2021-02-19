@@ -24,8 +24,8 @@
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-body.t1,
-.t1 body {
+body.t1-root,
+.t1-root body {
 	margin: 0;
 }
 
@@ -33,12 +33,12 @@ body.t1,
  * Modern defaults.
  */
 
-.t1,
-.t1::before,
-.t1::after,
-.t1 *,
-.t1 ::before,
-.t1 ::after {
+.t1-root,
+.t1-root::before,
+.t1-root::after,
+.t1-root *,
+.t1-root ::before,
+.t1-root ::after {
 	box-sizing: border-box; /* 1 */
 	border-width: 0;
 }
@@ -51,14 +51,14 @@ body.t1,
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-audio.t1,
-iframe.t1,
-embed.t1,
-object.t1,
-.t1 audio,
-.t1 iframe,
-.t1 embed,
-.t1 object {
+audio.t1-root,
+iframe.t1-root,
+embed.t1-root,
+object.t1-root,
+.t1-root audio,
+.t1-root iframe,
+.t1-root embed,
+.t1-root object {
 	display: block;
 	max-width: 100%;
 	vertical-align: middle;
@@ -71,14 +71,14 @@ object.t1,
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-img.t1,
-svg.t1,
-video.t1,
-canvas.t1,
-.t1 img,
-.t1 svg,
-.t1 video,
-.t1 canvas {
+img.t1-root,
+svg.t1-root,
+video.t1-root,
+canvas.t1-root,
+.t1-root img,
+.t1-root svg,
+.t1-root video,
+.t1-root canvas {
 	display: block;
 	max-width: 100%;
 	height: auto;
@@ -89,8 +89,8 @@ canvas.t1,
  * Remove the border on images inside links in IE 10.
  */
 
-img.t1,
-.t1 img {
+img.t1-root,
+.t1-root img {
 	border-style: none;
 }
 
@@ -98,14 +98,14 @@ img.t1,
  * Modern default monospace font inspired by Tailwind CSS.
  */
 
-pre.t1,
-code.t1,
-kbd.t1,
-samp.t1,
-.t1 pre,
-.t1 code,
-.t1 kbd,
-.t1 samp {
+pre.t1-root,
+code.t1-root,
+kbd.t1-root,
+samp.t1-root,
+.t1-root pre,
+.t1-root code,
+.t1-root kbd,
+.t1-root samp {
 	font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -113,12 +113,12 @@ samp.t1,
  * Correct the odd `em` font sizing in all browsers.
  */
 
-code.t1,
-kbd.t1,
-samp.t1,
-.t1 code,
-.t1 kbd,
-.t1 samp {
+code.t1-root,
+kbd.t1-root,
+samp.t1-root,
+.t1-root code,
+.t1-root kbd,
+.t1-root samp {
 	font-size: 1em;
 }
 
@@ -127,8 +127,8 @@ samp.t1,
  * Render the `main` element consistently in IE.
  */
 
-main.t1,
-.t1 main {
+main.t1-root,
+.t1-root main {
 	display: block;
 }
 
@@ -136,18 +136,18 @@ main.t1,
  * Use opt-in styling.
  */
 
-h1.t1,
-h2.t1,
-h3.t1,
-h4.t1,
-h5.t1,
-h6.t1,
-.t1 h1,
-.t1 h2,
-.t1 h3,
-.t1 h4,
-.t1 h5,
-.t1 h6 {
+h1.t1-root,
+h2.t1-root,
+h3.t1-root,
+h4.t1-root,
+h5.t1-root,
+h6.t1-root,
+.t1-root h1,
+.t1-root h2,
+.t1-root h3,
+.t1-root h4,
+.t1-root h5,
+.t1-root h6 {
 	margin: 0;
 	font-size: inherit;
 	font-weight: inherit;
@@ -160,8 +160,8 @@ h6.t1,
  *    image in an `::after` pseudo element is often used.
  */
 
-hr.t1,
-.t1 hr {
+hr.t1-root,
+.t1-root hr {
 	margin: 0;
 	height: 0;
 	overflow: visible; /* 1 */
@@ -172,18 +172,18 @@ hr.t1,
  * Use opt-in styling.
  */
 
-blockquote.t1,
-dl.t1,
-dd.t1,
-figure.t1,
-p.t1,
-pre.t1,
-.t1 blockquote,
-.t1 dl,
-.t1 dd,
-.t1 figure,
-.t1 p,
-.t1 pre {
+blockquote.t1-root,
+dl.t1-root,
+dd.t1-root,
+figure.t1-root,
+p.t1-root,
+pre.t1-root,
+.t1-root blockquote,
+.t1-root dl,
+.t1-root dd,
+.t1-root figure,
+.t1-root p,
+.t1-root pre {
 	margin: 0;
 }
 
@@ -191,8 +191,8 @@ pre.t1,
  * Correct the odd `em` font sizing in all browsers.
  */
 
-pre.t1,
-.t1 pre {
+pre.t1-root,
+.t1-root pre {
 	font-size: 1em;
 }
 
@@ -201,8 +201,8 @@ pre.t1,
  * 2. Use opt-in styling.
  */
 
-a.t1,
-.t1 a {
+a.t1-root,
+.t1-root a {
 	background-color: transparent; /* 1 */
 	color: inherit; /* 2 */
 	text-decoration: inherit; /* 2 */
@@ -213,8 +213,8 @@ a.t1,
  * 2. Normalize text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 
-abbr.t1[title],
-.t1 abbr[title] {
+abbr.t1-root[title],
+.t1-root abbr[title] {
 	border-bottom: none; /* 1 */
 	text-decoration: underline; /* 2 */
 	-webkit-text-decoration: underline dotted; /* 2 */
@@ -225,10 +225,10 @@ abbr.t1[title],
  * Normalize font weight.
  */
 
-b.t1,
-strong.t1,
-.t1 b,
-.t1 strong {
+b.t1-root,
+strong.t1-root,
+.t1-root b,
+.t1-root strong {
 	font-weight: bolder;
 }
 
@@ -236,8 +236,8 @@ strong.t1,
  * Normalize font size.
  */
 
-small.t1,
-.t1 small {
+small.t1-root,
+.t1-root small {
 	font-size: 80%;
 }
 
@@ -246,23 +246,23 @@ small.t1,
  * all browsers.
  */
 
-sub.t1,
-sup.t1,
-.t1 sub,
-.t1 sup {
+sub.t1-root,
+sup.t1-root,
+.t1-root sub,
+.t1-root sup {
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
 }
 
-sub.t1,
-.t1 sub {
+sub.t1-root,
+.t1-root sub {
 	bottom: -0.25em;
 }
 
-sup.t1,
-.t1 sup {
+sup.t1-root,
+.t1-root sup {
 	top: -0.5em;
 }
 
@@ -270,8 +270,8 @@ sup.t1,
  * Hide element with `hidden` attribute.
  */
 
-.t1[hidden],
-.t1 [hidden] {
+.t1-root[hidden],
+.t1-root [hidden] {
 	display: none;
 }
 
@@ -279,8 +279,8 @@ sup.t1,
  * Use opt-in styling.
  */
 
-button.t1,
-.t1 button {
+button.t1-root,
+.t1-root button {
 	background-color: transparent;
 	background-image: none;
 	padding: 0;
@@ -291,8 +291,8 @@ button.t1,
  * results in a loss of the default `button` focus styles.
  */
 
-button.t1:focus,
-.t1 button:focus {
+button.t1-root:focus,
+.t1-root button:focus {
 	outline: 1px dotted;
 	outline: 3px auto -webkit-focus-ring-color;
 }
@@ -301,10 +301,10 @@ button.t1:focus,
  * Modern default.
  */
 
-button.t1,
-.t1[role="button"],
-.t1 button,
-.t1 [role="button"] {
+button.t1-root,
+.t1-root[role="button"],
+.t1-root button,
+.t1-root [role="button"] {
 	cursor: pointer;
 }
 
@@ -313,16 +313,16 @@ button.t1,
  * 2. Normalize font in all browsers.
  */
 
-button.t1,
-input.t1,
-optgroup.t1,
-select.t1,
-textarea.t1,
-.t1 button,
-.t1 input,
-.t1 optgroup,
-.t1 select,
-.t1 textarea {
+button.t1-root,
+input.t1-root,
+optgroup.t1-root,
+select.t1-root,
+textarea.t1-root,
+.t1-root button,
+.t1-root input,
+.t1-root optgroup,
+.t1-root select,
+.t1-root textarea {
 	margin: 0; /* 1 */
 	padding: 0; /* 1 */
 	line-height: inherit; /* 1 */
@@ -335,10 +335,10 @@ textarea.t1,
  * Show the overflow in IE.
  */
 
-button.t1,
-input.t1,
-.t1 button,
-.t1 input {
+button.t1-root,
+input.t1-root,
+.t1-root button,
+.t1-root input {
 	overflow: visible;
 }
 
@@ -346,10 +346,10 @@ input.t1,
  * Remove the inheritance of text transform.
  */
 
-button.t1,
-select.t1,
-.t1 button,
-.t1 select {
+button.t1-root,
+select.t1-root,
+.t1-root button,
+.t1-root select {
 	text-transform: none;
 }
 
@@ -357,14 +357,14 @@ select.t1,
  * Correct the inability to style clickable types in iOS and Safari.
  */
 
-button.t1,
-.t1[type="button"],
-.t1[type="reset"],
-.t1[type="submit"],
-.t1 button,
-.t1 [type="button"],
-.t1 [type="reset"],
-.t1 [type="submit"] {
+button.t1-root,
+.t1-root[type="button"],
+.t1-root[type="reset"],
+.t1-root[type="submit"],
+.t1-root button,
+.t1-root [type="button"],
+.t1-root [type="reset"],
+.t1-root [type="submit"] {
 	-webkit-appearance: button;
 }
 
@@ -372,14 +372,14 @@ button.t1,
  * Remove the inner border and padding in Firefox.
  */
 
-button.t1::-moz-focus-inner,
-.t1[type="button"]::-moz-focus-inner,
-.t1[type="reset"]::-moz-focus-inner,
-.t1[type="submit"]::-moz-focus-inner,
-.t1 button::-moz-focus-inner,
-.t1 [type="button"]::-moz-focus-inner,
-.t1 [type="reset"]::-moz-focus-inner,
-.t1 [type="submit"]::-moz-focus-inner {
+button.t1-root::-moz-focus-inner,
+.t1-root[type="button"]::-moz-focus-inner,
+.t1-root[type="reset"]::-moz-focus-inner,
+.t1-root[type="submit"]::-moz-focus-inner,
+.t1-root button::-moz-focus-inner,
+.t1-root [type="button"]::-moz-focus-inner,
+.t1-root [type="reset"]::-moz-focus-inner,
+.t1-root [type="submit"]::-moz-focus-inner {
 	border-style: none;
 	padding: 0;
 }
@@ -388,14 +388,14 @@ button.t1::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 
-button.t1:-moz-focusring,
-.t1[type="button"]:-moz-focusring,
-.t1[type="reset"]:-moz-focusring,
-.t1[type="submit"]:-moz-focusring,
-.t1 button:-moz-focusring,
-.t1 [type="button"]:-moz-focusring,
-.t1 [type="reset"]:-moz-focusring,
-.t1 [type="submit"]:-moz-focusring {
+button.t1-root:-moz-focusring,
+.t1-root[type="button"]:-moz-focusring,
+.t1-root[type="reset"]:-moz-focusring,
+.t1-root[type="submit"]:-moz-focusring,
+.t1-root button:-moz-focusring,
+.t1-root [type="button"]:-moz-focusring,
+.t1-root [type="reset"]:-moz-focusring,
+.t1-root [type="submit"]:-moz-focusring {
 	outline: 1px dotted ButtonText;
 }
 
@@ -403,8 +403,8 @@ button.t1:-moz-focusring,
  * Opt-in styling.
  */
 
-fieldset.t1,
-.t1 fieldset {
+fieldset.t1-root,
+.t1-root fieldset {
 	margin: 0;
 	padding: 0;
 }
@@ -416,8 +416,8 @@ fieldset.t1,
  *    `fieldset` elements in all browsers.
  */
 
-legend.t1,
-.t1 legend {
+legend.t1-root,
+.t1-root legend {
 	box-sizing: border-box; /* 1 */
 	display: table; /* 1 */
 	max-width: 100%; /* 1 */
@@ -430,8 +430,8 @@ legend.t1,
  * Normalize vertical alignment in Chrome, Firefox, and Opera.
  */
 
-progress.t1,
-.t1 progress {
+progress.t1-root,
+.t1-root progress {
 	vertical-align: baseline;
 }
 
@@ -440,8 +440,8 @@ progress.t1,
  * 2. Modern default.
  */
 
-textarea.t1,
-.t1 textarea {
+textarea.t1-root,
+.t1-root textarea {
 	overflow: auto; /* 1 */
 	resize: vertical; /* 2 */
 }
@@ -451,10 +451,10 @@ textarea.t1,
  * 2. Remove padding in IE 10.
  */
 
-.t1[type="checkbox"],
-.t1[type="radio"],
-.t1 [type="checkbox"],
-.t1 [type="radio"] {
+.t1-root[type="checkbox"],
+.t1-root[type="radio"],
+.t1-root [type="checkbox"],
+.t1-root [type="radio"] {
 	box-sizing: border-box; /* 1 */
 	padding: 0; /* 2 */
 }
@@ -463,10 +463,10 @@ textarea.t1,
  * Normalize cursor style of increment and decrement buttons in Chrome.
  */
 
-.t1[type="number"]::-webkit-inner-spin-button,
-.t1[type="number"]::-webkit-outer-spin-button,
-.t1 [type="number"]::-webkit-inner-spin-button,
-.t1 [type="number"]::-webkit-outer-spin-button {
+.t1-root[type="number"]::-webkit-inner-spin-button,
+.t1-root[type="number"]::-webkit-outer-spin-button,
+.t1-root [type="number"]::-webkit-inner-spin-button,
+.t1-root [type="number"]::-webkit-outer-spin-button {
 	height: auto;
 }
 
@@ -475,8 +475,8 @@ textarea.t1,
  * 2. Normalize outline style in Safari.
  */
 
-.t1[type="search"],
-.t1 [type="search"] {
+.t1-root[type="search"],
+.t1-root [type="search"] {
 	-webkit-appearance: textfield; /* 1 */
 	outline-offset: -2px; /* 2 */
 }
@@ -485,8 +485,8 @@ textarea.t1,
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 
-.t1[type="search"]::-webkit-search-decoration,
-.t1 [type="search"]::-webkit-search-decoration {
+.t1-root[type="search"]::-webkit-search-decoration,
+.t1-root [type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
 
@@ -495,8 +495,8 @@ textarea.t1,
  * 2. Change font properties to `inherit` in Safari.
  */
 
-.t1::-webkit-file-upload-button,
-.t1 ::-webkit-file-upload-button {
+.t1-root::-webkit-file-upload-button,
+.t1-root ::-webkit-file-upload-button {
 	-webkit-appearance: button; /* 1 */
 	font: inherit; /* 2 */
 }
@@ -505,8 +505,8 @@ textarea.t1,
  * Normalize display in Edge, IE 10+, and Firefox.
  */
 
-details.t1,
-.t1 details {
+details.t1-root,
+.t1-root details {
 	display: block;
 }
 
@@ -514,8 +514,8 @@ details.t1,
  * Normalize display in all browsers.
  */
 
-summary.t1,
-.t1 summary {
+summary.t1-root,
+.t1-root summary {
 	display: list-item;
 }
 
@@ -523,8 +523,8 @@ summary.t1,
  * Normalize display in IE 10+.
  */
 
-template.t1,
-.t1 template {
+template.t1-root,
+.t1-root template {
 	display: none;
 }
 
@@ -532,10 +532,10 @@ template.t1,
  * Opt-in styling.
  */
 
-ol.t1,
-ul.t1,
-.t1 ol,
-.t1 ul {
+ol.t1-root,
+ul.t1-root,
+.t1-root ol,
+.t1-root ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -546,8 +546,8 @@ ul.t1,
  * Modern default.
  */
 
-table.t1,
-.t1 table {
+table.t1-root,
+.t1-root table {
 	border-collapse: collapse;
 }
 
