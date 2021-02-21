@@ -34,7 +34,7 @@ html {
 	hyphens: manual; /* 4 */
 	letter-spacing: normal; /* 4 */
 	overflow-wrap: normal; /* 4 */
-	tab-size: 8
+	tab-size: 8; /* 4 */
 	text-indent: 0; /* 4 */
 	text-transform: none; /* 4 */
 	visibility: visible; /* 4 */
