@@ -25,6 +25,22 @@
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-size: 16px; /* 4 */
 	text-align: start; /* 4 */
+	color: #000; /* 4 */
+	cursor: auto; /* 4 */
+	empty-cells: show; /* 4 */
+	font-style: normal; /* 4 */
+	font-variant: normal; /* 4 */
+	font-weight: 400; /* 4 */
+	hyphens: manual; /* 4 */
+	letter-spacing: normal; /* 4 */
+	overflow-wrap: normal; /* 4 */
+	tab-size: 8
+	text-indent: 0; /* 4 */
+	text-transform: none; /* 4 */
+	visibility: visible; /* 4 */
+	white-space: normal; /* 4 */
+	word-spacing: normal; /* 4 */
+	word-wrap: normal; /* 4 */
 }
 
 body.t1 {
