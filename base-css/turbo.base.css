@@ -49,7 +49,11 @@ body.t1,
 }
 
 /*
- * Modern defaults.
+ * 1. Modern default.
+ * 2. Modern default. Solid borders are used way more often than any other
+ *    border style, thus old default of using border-style:; none to hide
+ *    borders does not make sense. Use border-width: 0 to hide borders by
+ *    default, making it require less typing to enable it.
  */
 
 .t1,
@@ -59,7 +63,8 @@ body.t1,
 .t1-all ::before,
 .t1-all ::after {
 	box-sizing: border-box; /* 1 */
-	border-width: 0;
+	border-width: 0; /* 2 */
+	border-style: solid; /* 2 */
 }
 
 /*
