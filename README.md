@@ -38,5 +38,5 @@ discussing it and getting consent.
 
 ## License
 
-TODO: add license
+See the LICENSE file.
 
