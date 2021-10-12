@@ -15,7 +15,7 @@ opacity: {value};
 
 
 # ARGUMENT
-value <float32 default-unit=0.01>
+value <uint32 default-unit=0.01>
 
 
 # EXAMPLE
